@@ -91,6 +91,6 @@ const vue = new Vue (
                 },
             ]             
         }
-
+        
     }
 )

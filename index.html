@@ -16,7 +16,7 @@
         <div class="color-2"></div>
     </div>
 
-    <main class="container">
+    <main class="container" id="archive-chat">
 
         <div class="left-part">
 
@@ -64,7 +64,7 @@
                 </div>
                 
                 
-                <div id="archive-chat">
+                <div class="preview_chat">
 
                     <div class="contact" v-for="(contact, index) in contacts">
                         <div class="chat-img">
@@ -85,7 +85,48 @@
 
         </div>
 
-        <div class="right-part"></div>
+        <div class="right-part">
+
+            <div class="header-chat">
+                <div class="header-informations">
+                    <img src="img/avatar_1.jpg" alt="Chat Image">
+                    <span>Michele</span>
+                </div>
+
+                <div class="menu-options">
+
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                    
+                </div>
+                
+            </div>
+
+            <div class="footer-chat">
+
+                <a href="#">
+                    <i class="fa-regular fa-face-smile"></i>
+                </a>
+                
+
+                <input type="text" id="message-chat">
+
+                <a href="#">
+                    <i class="fa-solid fa-microphone"></i>
+                </a>
+                
+
+            </div>
+
+        </div>
+
 
     </main>
     
