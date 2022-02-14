@@ -223,3 +223,31 @@ body {
     border: none;
     padding: 15px;
 }
+
+/*Regole messaggi*/
+
+.line-message {
+    width: 100%;
+}
+
+.green-msg {
+    background-color: #D6F9BA;
+    float: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.line-message::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.white-msg {
+    background-color: #ffffff;
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px;
+}
