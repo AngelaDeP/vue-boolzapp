@@ -58,6 +58,23 @@
 
             <div class="sec-chats">
                 
+                <div id="archive-chat">
+
+                    <div class="contact" v-for="(contact, index) in contacts">
+                        <div class="chat-img">
+                            <img :src="contact.avatar">
+                        </div>
+
+                        <div class="chat-preview">
+                            <h3>{{contact.name}}</h3>
+                            <span>{{contact.text}}</span>
+                            <span class="date">{{contact.date}}</span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

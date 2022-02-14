@@ -124,6 +124,37 @@ body {
     background-color: #FAFAFA;
 }
 
+.contact {
+    background-color: #fff;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+.contact img {
+    border-radius: 50%;
+    width: 70px;
+    margin: 10px;
+}
+
+.chat-preview {
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+
+.chat-preview span {
+    color: #B1B1B1;
+    font-size: 15px;
+}
+
+.chat-preview .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
 /*Regola parte destra del container*/
 
 .right-part {
