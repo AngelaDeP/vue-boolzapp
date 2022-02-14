@@ -50,6 +50,8 @@ body {
     flex-direction: column;
 }
 
+/*Regole sezione utente*/
+
 .sec-user {
     background-color: #EBEBEB;
     display: flex;
@@ -84,6 +86,42 @@ body {
 .menu-options i {
     font-size: 25px;
     margin-left: 20px;
+}
+
+/*Regole sezione notifiche*/
+
+.sec-notifs {
+    background-color: #8EDAFD;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.sec-notifs i {
+    background-color: #fff;
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #8EDAFD;
+}
+
+.notif-text {
+    margin-left: 10px;
+}
+
+.notif-text span {
+    font-weight: bold;
+}
+
+.notif-text a {
+    color: #414141;
+    font-size: 15px;
+}
+
+/*Regola sezione archivi chat*/
+
+.sec-chats {
+    background-color: #FAFAFA;
 }
 
 /*Regola parte destra del container*/
