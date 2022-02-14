@@ -124,6 +124,18 @@ body {
     background-color: #FAFAFA;
 }
 
+#search-chat {
+    width: 90%;
+    margin: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.bar-search i {
+    color: #B1B1B1;
+    margin-left: 5px;
+}
+
 .contact {
     background-color: #fff;
     margin-top: 10px;
