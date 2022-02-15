@@ -89,8 +89,8 @@
 
             <div class="header-chat">
                 <div class="header-informations">
-                    <img src="img/avatar_1.jpg" alt="Chat Image">
-                    <span>Michele</span>
+                    <img :src="contacts[active].avatar">
+                    <span>{{contacts[active].name}}</span>
                 </div>
 
                 <div class="menu-options">
