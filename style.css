@@ -228,6 +228,7 @@ body {
 
 .line-message {
     width: 100%;
+    list-style-type: none;
 }
 
 .green-msg {
@@ -235,7 +236,7 @@ body {
     float: right;
     padding: 20px;
     border-radius: 10px;
-    margin: 40px;
+    margin: 30px;
 }
 
 .line-message::after {
@@ -249,5 +250,5 @@ body {
     float: left;
     padding: 20px;
     border-radius: 10px;
-    margin: 40px;
+    margin: 30px;
 }

@@ -66,15 +66,15 @@
                 
                 <div class="preview_chat">
 
-                    <div class="contact" v-for="(contact, index) in contacts">
+                    <div class="contact" v-for="(contact, message) in contacts">
                         <div class="chat-img">
                             <img :src="contact.avatar">
                         </div>
 
-                        <div class="chat-preview" v-for="(message, index) in contact.messages">
+                        <div class="chat-preview">
                             <h3>{{contact.name}}</h3>
-                            <span>{{message.text}}</span>
-                            <span class="date">{{message.date}}</span>
+                            <span>{{contact.messages[contact.messages.length -1] .text.slice(0, 17) + '...'}}</span>
+                            <span class="date">{{contact.messages[contact.messages.length -1] .date}}</span>
                         </div>
                         
                     </div>
@@ -117,11 +117,11 @@
 
                 </div>
 
-                <div class="line-message">
+                <ul class="line-message" v-for="contact in contacts[0].messages">
 
-                    <div class="white-msg">Ciao</div>
+                    <li class="white-msg">{{contact.text}}</li>
 
-                </div>
+                </ul>
 
             </div>
 
