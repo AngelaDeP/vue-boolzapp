@@ -4,7 +4,7 @@ const vue = new Vue (
         el: '#archive-chat',
         data: {
 
-            
+            active: 0,
 
             contacts: [
                 {

@@ -231,7 +231,7 @@ body {
     list-style-type: none;
 }
 
-.green-msg {
+.sent {
     background-color: #D6F9BA;
     float: right;
     padding: 20px;
@@ -245,7 +245,7 @@ body {
     display: table;
 }
 
-.white-msg {
+.received {
     background-color: #ffffff;
     float: left;
     padding: 20px;

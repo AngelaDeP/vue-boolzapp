@@ -111,15 +111,15 @@
 
             <div class="viewed-messages">
 
-                <div class="line-message">
+               <!-- <div class="line-message">
 
                     <div class="green-msg">Ciao</div>
 
-                </div>
+                </div>-->
 
-                <ul class="line-message" v-for="contact in contacts[0].messages">
+                <ul class="line-message" v-for="contact in contacts[active].messages">
 
-                    <li class="white-msg">{{contact.text}}</li>
+                    <li :class="contact.status == 'sent' ? 'sent' : 'received' ">{{contact.text}}</li>
 
                 </ul>
 
