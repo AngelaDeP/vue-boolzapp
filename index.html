@@ -119,7 +119,10 @@
 
                 <ul class="line-message" v-for="contact in contacts[active].messages">
 
-                    <li :class="contact.status == 'sent' ? 'sent' : 'received' ">{{contact.text}}</li>
+                    <li :class="contact.status == 'sent' ? 'sent' : 'received' ">
+                        {{contact.text}}
+                        <div class="msg-date">{{contact.date}}</div>
+                    </li>
 
                 </ul>
 

@@ -251,4 +251,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 30px;
+    min-width: 300px;
+}
+
+.msg-date {
+    font-size: 10px;
+    text-align: right;
+    color: #B1B1B1;
+    margin-top: 5px;
 }
