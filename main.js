@@ -95,6 +95,29 @@ const vue = new Vue (
                 },
 
             ],
+
+            newMessage: '',
             
+        }, 
+        methods: {
+
+            changeChat(index) {
+            
+                this.active = index;
+            },
+
+            sendMessage() {
+                const objMessage = {
+                    date: dayjs().format('DD/MM/YYYY HH:mm'),
+                    text: this.newMessage,
+                    status: 'sent'
+                };
+
+                this.contacts[this.active].messages.push(objMessage);
+                this.newMessage = '';
+            }
+        
         }
-})
+    }
+)
+
