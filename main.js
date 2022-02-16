@@ -115,6 +115,16 @@ const vue = new Vue (
 
                 this.contacts[this.active].messages.push(objMessage);
                 this.newMessage = '';
+
+                const replyMessage = {
+                    date: dayjs().format('DD/MM/YYYY HH:mm'),
+                    text: 'Okay!',
+                    status: 'received'
+                };
+
+                setTimeout(() => {
+                    this.contacts[this.active].messages.push(replyMessage);
+                }, 1000);
             }
         
         }
